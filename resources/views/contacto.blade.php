@@ -10,6 +10,13 @@
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
               <h1>Contacto</h1>
+                 <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="600">
+              <i class="bi bi-clock flex-shrink-0"></i>
+              <div>
+                <h3>Horário</h3>
+                <p>Seg-Sex: 08h00 - 17h00</p>
+              </div>
+            </div>
               <p class="mb-0"></p>
             </div>
           </div>

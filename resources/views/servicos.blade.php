@@ -16,9 +16,14 @@
       </div>
       <nav class="breadcrumbs ">
         <div class="container" >
-          <ol>
-              <li id="data"> <h4>Dias e horários de atendimento</h4></li>
-              <h4 id="data"><li>Segunda à Sexta-feira das 08:00 às 16:00</h4></li>
+          <ol>   <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="700">
+              <i class="bi bi-clock flex-shrink-0"></i>
+              
+              <div class="text-center">
+                <h3>Horário</h3>
+                <p>Seg-Sex: 08h00 - 16h00</p>
+              </div>
+            </div>
           </ol>
         </div>
       </nav>
