@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="shortcut icon" href="{{asset('site/imagens/ícone.png')}}" type="image/x-icon">
@@ -31,17 +32,36 @@
   <!-- summernote -->
   <link rel="stylesheet" href="{{ asset('site/plugins/summernote/summernote-bs4.min.css') }}">
 </head>
-<body>
-    <header div="header-content2">
-     
-  <nav calss="menu"class="navbar" id="nav1">
-       
-    <div id="nav">    
- <img src="{{asset('site/imagens/flyer CERTO.png')}}" alt="Logo" class="logo" width="100" height="50">
+<body class="index-page">
+ <header id="header2" class="header  align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-center" id="cll" >
+      <!-- Uncomment the line below if you also wish to use an image logo -->
 
-</div>
-  </nav>
-</header>
+    <!-- Uncomment the line below if you also wish to use an image logo -->
+    <img src="{{asset('site/img/flyer-CERTO.png')}}" class="logo"alt="logo" > 
+
+      
+     
+
+      <nav id="navmenu1" class="navmenu">
+        <ul>
+          <li>   <a href="{{ url('/') }}" class="{{ request()->is('/') ? 'active' : '' }}">Início</a></li>
+          <li><a href="{{ url('/sobre') }}" class="{{ request()->is('sobre') ? 'active' : '' }}">Sobre Nós</a></li>
+          <li><a href="{{ url('/servicos') }}" class="{{ request()->is('servicos') ? 'active' : '' }}">Serviços</a></li>
+
+          <li><a href="{{ url('/noticias') }}" class="{{ request()->is('noticias') ? 'active' : '' }}">Notícias</a></li>
+          
+          
+          <li><a href="#"></a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="{{ url('/contacto') }}">Fale Connosco</a>
+
+    </div> 
+    <h1><strong>Sobre Nós</strong></h1>
+  </header>
     <main class="main-content">
        
     @yield('conteudo')
@@ -49,6 +69,35 @@
      <footer >
     
 </footer>
+<script>
+document.getElementById('menu-select').addEventListener('change', function() {
+    if(this.value) {
+        window.location.href = this.value;
+    }
+});
+</script>
+<script>
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    var menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+});
+</script>
+ <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ asset('site/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('site/vendor/php-email-form/validate.js') }}"></script>
+  <script src="{{ asset('site/vendor/aos/aos.js') }}"></script>
+  <script src="{{ asset('site/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ asset('site/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+  <script src="{{ asset('site/vendor/swiper/swiper-bundle.min.js') }}"></script>
+
+  <!-- Main JS File -->
+  <script src="{{ asset('site/js/main.js') }}"></script>
+  
 </body>
 </html>

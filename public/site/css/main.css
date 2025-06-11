@@ -20,6 +20,48 @@ margin-bottom: 0;
 text-align: center;
 padding: 10px;
 }
+/*
+#header2 {
+  background: transparent !important;
+  box-shadow: none !important;
+}*/
+#header2{
+  background-image: url('/site/img/QUEM-SOMOS (1).png');
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: static;
+  height:100%;
+  width: 100%;
+}
+#cll {
+  min-height: 200px;
+  align-items: center;
+  display: flex;
+}
+.logo {
+  height: 100px;
+  width: auto;
+  padding-right: 10px;
+}
+#header2 h1{
+  padding: 50px;
+  padding-left: 400px;
+  padding-top: 70px;
+}
+#header2 a{text-decoration: none;
+color:#ffffff;
+font-size: 20px;}
+#header a{text-decoration: none;
+color:#060606;
+font-size: 20px;}
+#btf{color:#ffffff}
+#header2 a:hover{color: #04013d;}
+#header2 a.active {
+    color: #04013d;
+    border-radius: 8px;
+}
 #data{padding: 10px;}
 #nn{width: 100%;
 text-align: center;
@@ -29,10 +71,26 @@ justify-content: space-between;}
   --heading-font: "Raleway",  sans-serif;
   --nav-font: "Poppins",  sans-serif;
 }
+#tablist li .active{
+  background-color: #49b9db;
+  color:hsl(0, 0%, 100%)
+}
 /* Missão e valores */
 #valores h3{
   color: var(--accent-color);
 }
+#main1{text-align: center;
+align-items: center;}
+
+.hn{color:#49b9db ;}
+#tabs > .container {
+  margin-left: auto;
+  margin-right: auto;
+}
+#tabs .tab-content {
+  margin: 0 auto;
+}
+
 /* Menu */
 #header a{text-decoration: none;}
 #header a:hover{color: #0f8f98;}
@@ -99,10 +157,22 @@ background-size: cover;
 /*--------------------------------------------------------------
 #Conteudos de exames complementares
 --------------------------------------------------------------*/
-#ecomp{padding: 10px;}
-#imgcomp img{border-radius: 30px;
-box-shadow: 0 4px 8px #4e9ba0;}
+
+#imgcomp img{
+padding: 5px;}
 #bot{color: #0f8f98;}
+.paragraph{font-size: 20px;
+text-align: justify;}
+.img-fluid {
+ border-radius:30px;
+  
+}
+.img-2 {
+   
+  height: 150px;
+  display: inline-block;
+
+}
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/

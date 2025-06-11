@@ -32,57 +32,27 @@
 <body class="index-page">
 
        <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <div class="container-fluid container-xl position-center d-flex align-items-center justify-content-center">
 
-      <a href="#" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-         <img src="{{asset('site/img/flyer CERTO.png')}}" alt="logo" width="100" height="50"> 
-        
-      </a>
+         <img src="{{asset('site/img/flyer CERTO.png')}}" alt="logo" class="logo"> 
+    
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li>   <a href="{{ url('/') }}" class="{{ request()->is('/') ? 'active' : '' }}">Início</a></li>
-          <li><a href="{{ url('/sobre') }}" class="{{ request()->is('sobre') ? 'active' : '' }}">TrabMed</a></li>
+          <li><a href="{{ url('/sobre') }}" class="{{ request()->is('sobre') ? 'active' : '' }}">Sobre Nós</a></li>
           <li><a href="{{ url('/servicos') }}" class="{{ request()->is('servicos') ? 'active' : '' }}">Serviços</a></li>
 
-       <!--  <li class="dropdown"><a href="#"><span>Serviços</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Segurança no Trabalho</a></li>
-              <li><a href="#">Eptometria</a></li>
-              <li><a href="#">Exames Ocupacionais</a></li>
-              <li><a href="#">Exames Complementares</a></li>
-            </ul>
-          </li>
-          <li><a href="#" class="{{ request()->is('noticias') ? 'active' : '' }}">Contacto</a></li>
-          --><li><a href="{{ url('/noticias') }}" class="{{ request()->is('noticias') ? 'active' : '' }}">Notícias</a></li>
-          <!--<li><a href="trainers.html">Trainers</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-        <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>-->
+          <li><a href="{{ url('/noticias') }}" class="{{ request()->is('noticias') ? 'active' : '' }}">Notícias</a></li>
+          
           
           <li><a href="#"></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="{{ url('/contacto') }}">Fale Connosco</a>
+      <a class="btn-getstarted" href="{{ url('/contacto') }}" style="color:#ffffff;">Fale Connosco</a>
 
     </div>
   </header> 
@@ -109,7 +79,7 @@
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
             <span class="sitename">
-              <img src="{{ ('site/img/flyer CERTO.png') }}" alt="Logo">
+              <img src="{{ ('site/img/flyer CERTO.png') }}" alt="Logo" class="logo">
             </span>
           </a>
           <div class="footer-contact pt-3">
@@ -120,12 +90,7 @@ Rua da Avenida Lenine Nº7/9</p>
             <p class="mt-3"><strong>Telefone:</strong> <span>(+244) 944 88 48 49</span></p>
             <p><strong>Email:</strong> <span>recepção@trabmed.net</span></p>
           </div>
-          <!--div class="social-links d-flex mt-4" id="social">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div-->
+
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
@@ -147,10 +112,6 @@ Rua da Avenida Lenine Nº7/9</p>
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Trabmed</strong> <span>Todos os direitos reservados</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://Responserv.ao/" target="_blank">Responserv</a> Distributed by <a href="https://Responserv.ao/" target="_blank">Responserv
       </div>
     </div>
