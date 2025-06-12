@@ -10,14 +10,29 @@
 
         <div class="row gy-4">
               
-                  <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" id="imgcomp" data-aos-delay="100">
+                  <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-up" id="imgcomp" data-aos-delay="100">
                 
-                         <img src="{{asset('site/imagens/trab2.jpeg')}}" class="img-fluid" alt="">
-                         
+                         <div class="container my-4">
+  <div class="row g-0">
+    <div class="col-6 d-flex justify-content-start align-items-center">
+      <img src="{{ asset('site/imagens/trab.jpeg') }}" class="img-custom img1" alt="Imagem 1">
+    </div>
+    <div class="col-6 d-flex justify-content-start align-items-center">
+      
+      <img src="{{ asset('site/imagens/trab.jpeg') }}" class="img-custom img2" alt="Imagem 2">
+    </div>
+    <div class="col-6 d-flex justify-content-start   ">
+      <img src="{{ asset('site/imagens/trab.jpeg') }}" class="img-custom img3" alt="Imagem 3">
+    </div>
+    <div class="col-6 d-flex justify-content-start align-items-center ">
+      <img src="{{ asset('site/imagens/trab.jpeg') }}" class="img-custom img4" alt="Imagem 4">
+    </div>
+  </div>
+</div>
                   </div>
                     
                      
-          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 order-1 order-lg-2 content" data-aos="fade-up" data-aos-delay="200">
           <h1 class="hn"><strong>Nossa História</strong></h1>
             <p class="paragraph">
             A Trabmed é uma empresa especializada em Medicina do Trabalho, Higiene e Segurança no Trabalho, certificada pela IGT (Inspeção Geral do Trabalho) e INEFOP para ministrar cursos. Conta com uma equipe multidisciplinar que garante a execução e controle de qualidade dos serviços prestados 

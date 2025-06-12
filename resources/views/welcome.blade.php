@@ -3,13 +3,13 @@
 @section('conteudo')
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="hero" class="hero section dark-background"  >
 
-      <img src="{{ asset('site/img/trab.jpeg') }}" alt="" data-aos="fade-in">
+      <img src="{{ asset('site/img/trab.jpeg') }}" alt="" id="gg" data-aos="fade-in">
 
       <div class="container">
-        <h2 data-aos="fade-up" data-aos-delay="100">Ofereça,<br>Melhores Condições de trabalho <br>Para sua Equipe</h2>
-        <p data-aos="fade-up" data-aos-delay="200">Somos Especialistas em Saúde e Segurança no trabalho</p>
+        <h2 data-aos="fade-up" data-aos-delay="100">Ofereça as melhores <br>condições de trabalho <br>para sua equipe</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Invista em Saúde e Segurança no trabalho <br>com a Trabmed</p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
           <!--  <a href="courses.html" class="btn-get-started">Get Started</a>-->
         </div>
@@ -18,55 +18,64 @@
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
-    <section id="about" class="about section">
+    <section id="about" class="about section justify-content-center align-text-center">
 
-      <div class="container">
+      <div class="container d-flex justify-content-center align-items-center" style="min-height: 200px;">
+  <h1 class="hn text-center"><strong>Especialidades</strong></h1>
+</div>
 
-        <div class="row gy-4">
-
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" id="imgcomp"data-aos-delay="100">
-            <img src="{{ asset('site/img/about.jpg') }}" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
-            <h3>Exames de Saúde Ocupacional</h3>
-           <h4></h4>
-            <ul>
-              <li><i class="bi bi-check-circle" id="bot"></i> <span>Admissional</span></li>
-              <li><i class="bi bi-check-circle"id="bot"></i> <span>Periódico</span></li>
-              <li><i class="bi bi-check-circle"id="bot"></i> <span>Demissional</span></li>
-                <li><i class="bi bi-check-circle"id="bot"></i> <span>Retorno de Trabalho</span></li>
-                  <li><i class="bi bi-check-circle"id="bot"></i> <span>Mudança de Função</span></li>
-            </ul>
-             <!--  <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>-->
-          </div>
-
-        </div>
-        
-
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-4 mb-4">
+      <div class="info-box p-4 position-relative bg-white rounded shadow h-100">
+        <i class="bi bi-heart-pulse-fill position-absolute top-0 start-0 m-3 fs-2 text-primary"></i>
+        <h5 class="mt-5 hn"><strong>Medicina do Trabalho</strong></h5>
+        <p>Serviços especializados para garantir a saúde ocupacional dos colaboradores.</p>
       </div>
-      <div class="container" id="ecomp">
-        <div class="row gy-4">
-
-          <div class="col-lg-6 order-1 order-lg-1" data-aos="fade-up" id="imgcomp" data-aos-delay="100">
-            <img src="{{ asset('site/img/trab3.jpeg') }}" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-6 order-2 order-lg-2 content" data-aos="fade-up" data-aos-delay="200">
-            <h3>Exames Complementares</h3>
-           <h4></h4>
-            <ul>
-              <li><i class="bi bi-check-circle" id="bot"></i> <span> Audiometria</span></li>
-              <li><i class="bi bi-check-circle" id="bot"></i> <span>Espirometria</span></li>
-              <li><i class="bi bi-check-circle" id="bot"></i> <span>Eletrocardiograma</span></li>
-                <li><i class="bi bi-check-circle" id="bot"></i> <span>Visioteste</span></li>
-                  <li><i class="bi bi-check-circle" id="bot"></i> <span>Exames Laboratoriais</span></li>
-            </ul>
-           <!-- End Stats Item  <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>-->
-          </div>
-
-        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="info-box p-4 position-relative bg-white rounded shadow h-100">
+        <i class="bi bi-shield-check position-absolute top-0 start-0 m-3 fs-2 text-success"></i>
+        <h5 class="mt-5 hn"><strong>Segurança do Trabalho</strong></h5>
+        <p>Consultoria e treinamentos para ambientes de trabalho mais seguros.</p>
       </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="info-box p-4 position-relative bg-white rounded shadow h-100">
+        <i class="bi bi-people-fill position-absolute top-0 start-0 m-3 fs-2 text-warning"></i>
+        <h5 class="mt-5 hn"><strong>Treinamentos</strong></h5>
+        <p>Cursos e capacitações reconhecidos pelo INEFOP e IGT.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-4 mb-4">
+      <div class="info-box p-4 position-relative bg-white rounded shadow h-100">
+        <i class="bi bi-heart-pulse-fill position-absolute top-0 start-0 m-3 fs-2 text-primary"></i>
+        <h5 class="mt-5 hn"><strong>Medicina do Trabalho</strong></h5>
+        <p>Serviços especializados para garantir a saúde ocupacional dos colaboradores.</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="info-box p-4 position-relative bg-white rounded shadow h-100">
+        <i class="bi bi-shield-check position-absolute top-0 start-0 m-3 fs-2 text-success"></i>
+        <h5 class="mt-5 hn" ><strong>Segurança do Trabalho</strong></h5>
+        <p>Consultoria e treinamentos para ambientes de trabalho mais seguros.</p>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="info-box p-4 position-relative bg-white rounded shadow h-100">
+        <i class="bi bi-people-fill position-absolute top-0 start-0 m-3 fs-2 text-warning"></i>
+        <h5 class="mt-5 hn"><strong>Treinamento</strong>s</h5>
+        <p>Cursos e capacitações reconhecidos pelo INEFOP e IGT.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
     </section><!-- /About Section -->
 
