@@ -11,6 +11,9 @@ Route::get('/', [InformationController::class, 'show']);
 Route::get('/sobre', function () {
     return view('sobre');
 });
+Route::get('/pedido', function () {
+    return view('form');
+});
 Route::get('/add', function () {
     return view('exames');
 });

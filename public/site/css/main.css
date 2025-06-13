@@ -5,12 +5,71 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
 
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
 /*--------------------------------------------------------------
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 #logo{color:white;}
 .msg{background-color: #D4EDDA;
 color: #155724;
@@ -35,25 +94,67 @@ padding: 10px;
   height:100%;
   width: 100%;
 }
+#header3{
+  background-image: url('/site/img/QUEM-SOMOS (1).png');
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: static;
+
+  width: 100%;
+}
 #cll {
   min-height: 200px;
   align-items: center;
   display: flex;
 }
 .logo {
-  height: 80px;
+  height: 60px;
   width: auto;
   padding-right: 10px;
 }
+#hebader{
+  padding: 10px;
+}
+#form{padding: 20px;
+padding-top: 30px;
+padding-left: 230px;
+ display: flex;
+margin: 0 auto;
+align-items: center;
+justify-content: center;
+width: 100%;
+  height: 100%;
+  flex-direction: column;
+  margin: auto !important;
+  }
+  #espec{
+    background-color: #bfe5f7;
+  }
+  .top{padding-top: 10px;}
+
+
+.col-md-6{padding-top: 20px;}
 #header2 h1{
   padding: 50px;
-  padding-left: 400px;
-  padding-top: 70px;
+  padding-left: 378px;
+  padding-top: 90px;
 }
-.img1 { width: 250px; height: 150px; object-fit: cover; border-radius: 25px; }
-.img2 { width: 220px; height: 180px; object-fit: cover; border-radius: 25px; }
-.img3 { width: 260px; height: 180px; object-fit: cover; border-radius: 25px; padding-left: 10px;}
-.img4 { width: 200px; height: 150px; object-fit: cover; border-radius: 25px; }
+#header3 h1{
+  padding-left: 400px;
+
+}
+.img1 { width: 260px; height: 160px; object-fit: cover; border-radius: 20px; }
+.img2 { width: 230px; height: 190px; object-fit: cover; border-radius: 20px; }
+.img3 { width: 270px; height: 190px; object-fit: cover; border-radius: 20px; padding-left: 10px;}
+.img4 { width: 210px; height: 160px; object-fit: cover; border-radius: 20px; }
+.linkp{font-size:12px;}
+#hist{box-shadow: 0 5px 20px #0bb5c41a;
+  max-width:600px ;
+}
+#para{padding: 50px;
+}
 .img-custom {
   margin: 0 !important;
   padding: 0 !important;
@@ -65,16 +166,28 @@ padding: 10px;
   padding-right: 0 !important;
 }
 #header2 a{text-decoration: none;
-color:#ffffff;
+color:#060606;
+font-size: 16 px;}
+#header3 a{text-decoration: none;
+color:#060606;
 font-size: 16 px;}
 #header a{text-decoration: none;
 color:#060606;
 font-size: 16px;}
 #header{padding:0;}
 #btf{color:#ffffff}
-#header2 a:hover{color: #04013d;}
+#header2 a:hover{color: #ffffff;
+background-color: #2fb3d4;
+height: 7px;
+}
+.btn-getstarted a:hover{color:#ffffff;}
 #header2 a.active {
-    color: #04013d;
+    color: #ffffff;
+    border-radius: 8px;
+}
+#header3 a:hover{color: #ffffff;}
+#header3 a.active {
+    color: #ffffff;
     border-radius: 8px;
 }
 #data{padding: 10px;}
@@ -105,6 +218,8 @@ align-items: center;}
 #tabs .tab-content {
   margin: 0 auto;
 }
+
+.logo{padding-right: 100px;}
 
 /* Menu */
 #header a{text-decoration: none;}

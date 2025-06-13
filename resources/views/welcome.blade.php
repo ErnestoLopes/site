@@ -18,19 +18,20 @@
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
-    <section id="about" class="about section justify-content-center align-text-center">
+    <section id="about"  class="about section justify-content-center align-text-center">
 
       <div class="container d-flex justify-content-center align-items-center" style="min-height: 200px;">
   <h1 class="hn text-center"><strong>Especialidades</strong></h1>
 </div>
-
-<div class="container my-5">
+<section id="espec">
+<div class="container my-5" >
   <div class="row justify-content-center">
     <div class="col-md-4 mb-4">
       <div class="info-box p-4 position-relative bg-white rounded shadow h-100">
         <i class="bi bi-heart-pulse-fill position-absolute top-0 start-0 m-3 fs-2 text-primary"></i>
         <h5 class="mt-5 hn"><strong>Medicina do Trabalho</strong></h5>
         <p>Serviços especializados para garantir a saúde ocupacional dos colaboradores.</p>
+        <a href="{{ url('/pedido') }}" class="linkp">Solicitar uma proposta</a>
       </div>
     </div>
     <div class="col-md-4 mb-4">
@@ -38,6 +39,7 @@
         <i class="bi bi-shield-check position-absolute top-0 start-0 m-3 fs-2 text-success"></i>
         <h5 class="mt-5 hn"><strong>Segurança do Trabalho</strong></h5>
         <p>Consultoria e treinamentos para ambientes de trabalho mais seguros.</p>
+        <a href="#" class="linkp">Solicitar uma proposta</a>
       </div>
     </div>
     <div class="col-md-4 mb-4">
@@ -45,6 +47,7 @@
         <i class="bi bi-people-fill position-absolute top-0 start-0 m-3 fs-2 text-warning"></i>
         <h5 class="mt-5 hn"><strong>Treinamentos</strong></h5>
         <p>Cursos e capacitações reconhecidos pelo INEFOP e IGT.</p>
+       <a href="#" class="linkp">Solicitar uma proposta</a>
       </div>
     </div>
   </div>
@@ -54,29 +57,32 @@
     <div class="col-md-4 mb-4">
       <div class="info-box p-4 position-relative bg-white rounded shadow h-100">
         <i class="bi bi-heart-pulse-fill position-absolute top-0 start-0 m-3 fs-2 text-primary"></i>
-        <h5 class="mt-5 hn"><strong>Medicina do Trabalho</strong></h5>
-        <p>Serviços especializados para garantir a saúde ocupacional dos colaboradores.</p>
+        <h5 class="mt-5 hn"><strong>Consultoria em SHST</strong></h5>
+        <p>Um serviço especializado que auxilia empresas a implementar, melhorar e manter sistemas de gestão de segurança e saúde ocupacional, garantindo conformidade legal, prevenção de acidentes e promoção de um ambiente de trabalho saudável.</p>
+        <a href="#" class="linkp">Solicitar uma proposta</a>
       </div>
     </div>
     <div class="col-md-4 mb-4">
       <div class="info-box p-4 position-relative bg-white rounded shadow h-100">
-        <i class="bi bi-shield-check position-absolute top-0 start-0 m-3 fs-2 text-success"></i>
-        <h5 class="mt-5 hn" ><strong>Segurança do Trabalho</strong></h5>
-        <p>Consultoria e treinamentos para ambientes de trabalho mais seguros.</p>
+        <i class="bi bi-heart-pulse-fill position-absolute top-0 start-0 m-3 fs-2 text-primary"></i>
+        <h5 class="mt-5 hn" ><strong>Exames Complementares do Diagnóstico</strong></h5>
+        <p>Ferramentas essenciais para confirmar, descartar ou monitorar condições de saúde, incluindo aquelas relacionadas ao trabalho. Eles complementam a avaliação clínica e ajudam a identificar riscos ocupacionais, doenças profissionais ou agravos à saúde.</p>
+        <a href="#" class="linkp">Solicitar uma proposta</a>
       </div>
     </div>
     <div class="col-md-4 mb-4">
       <div class="info-box p-4 position-relative bg-white rounded shadow h-100">
         <i class="bi bi-people-fill position-absolute top-0 start-0 m-3 fs-2 text-warning"></i>
-        <h5 class="mt-5 hn"><strong>Treinamento</strong>s</h5>
-        <p>Cursos e capacitações reconhecidos pelo INEFOP e IGT.</p>
+        <h5 class="mt-5 hn"><strong>Auditoria de Higiene e Segurança</strong>s</h5>
+        <p>Um processo sistemático e documentado para avaliar a conformidade e eficácia do sistema de gestão de segurança e saúde no trabalho (SST) de uma organização</p>
+      <a href="#" class="linkp">Solicitar uma proposta</a>
       </div>
     </div>
   </div>
 </div>
 
 
-
+</section>
     </section><!-- /About Section -->
 
     

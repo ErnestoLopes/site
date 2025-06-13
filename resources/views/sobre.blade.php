@@ -32,11 +32,11 @@
                   </div>
                     
                      
-          <div class="col-lg-6 order-1 order-lg-2 content" data-aos="fade-up" data-aos-delay="200">
-          <h1 class="hn"><strong>Nossa História</strong></h1>
+          <div class="col-lg-6 order-1 order-lg-2 content"id="hist" data-aos="fade-up" data-aos-delay="200">
+        <div id="para">  <h1 class="hn"><strong>Nossa História</strong></h1>
             <p class="paragraph">
             A Trabmed é uma empresa especializada em Medicina do Trabalho, Higiene e Segurança no Trabalho, certificada pela IGT (Inspeção Geral do Trabalho) e INEFOP para ministrar cursos. Conta com uma equipe multidisciplinar que garante a execução e controle de qualidade dos serviços prestados 
-            </p>
+            </p></div>
        
           </div>
 

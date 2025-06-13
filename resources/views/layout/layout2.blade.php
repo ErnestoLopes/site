@@ -11,6 +11,10 @@
     <title>@yield('title')</title>
     <link  href="{{ asset('site/css/main.css')}}" rel="stylesheet">
     
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -47,18 +51,34 @@
         <ul>
           <li>   <a href="{{ url('/') }}" class="{{ request()->is('/') ? 'active' : '' }}">Início</a></li>
           <li><a href="{{ url('/sobre') }}" class="{{ request()->is('sobre') ? 'active' : '' }}">Sobre Nós</a></li>
-          <li><a href="{{ url('/servicos') }}" class="{{ request()->is('servicos') ? 'active' : '' }}">Serviços</a></li>
+          <li class="{{ request()->is('serviços') ? 'active' : '' }} dropdown"><a href="#"><span>Serviços</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Segurança no Trabalho<i class="bi bi-chevron-down toggle-dropdown"></i></a></li>
+              <li><a href="#">Eptometria <strong><i class="bi bi-chevron-down toggle-dropdown"></i></strong></a></li>
+              <li><a href="#">Consultoria em SHST </a></li>
+              <li><a href="#">Formação, Auxílio e Coordenação da CPAT </a></li>
+              <li><a href="#">Exames Complementares do Diagnóstico</a></li>
+              <li><a href="#">Auditoria de Higiene e Segurança</a></li>
+              <li><a href="#">Exames Ocupacionais</a></li>
+              <li><a href="#">Exames de saúde ocupacional</a></li>
+            </ul>
+          </li>
+          <li class="{{ request()->is('parceiros') ? 'active' : '' }} dropdown"><a href="#"><span>Parceiros</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#" class="">Ensa<i class="bi bi-chevron-down toggle-dropdown"></i></a></li>
+              <li><a href="#">Vecauto<strong><i class="bi bi-chevron-down toggle-dropdown"></i></strong></a></li>
+              <li><a href="#">Shalina</a></li>
+            </ul>
+          </li>
 
-          <li><a href="{{ url('/noticias') }}" class="{{ request()->is('noticias') ? 'active' : '' }}">Notícias</a></li>
-          
-          
           <li><a href="#"></a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="{{ url('/contacto') }}">Fale Connosco</a>
-
+       <div class="btn-getstarted" style="color:#ffffff;">
+        <a href="https://wa.me/244944884849" target="_blank"  >Fale Connosco</a>
+      </div>
     </div> 
     <h1><strong>Sobre Nós</strong></h1>
   </header>
